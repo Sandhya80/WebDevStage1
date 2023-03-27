@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Loops</title>
+        <meta charset="utf-8">  
+        <script type="text/javascript">
+
+          function enter() {
+            
+            var aNumber = 1;
+            var bNumber = 5;
+            
+            while (aNumber < bNumber) {
+
+                alert("aNumber is less than bNumber.");
+                aNumber ++;
+                alert("The value of aNumber in the while loop is now: " + aNumber);
+            }
+                aNumber--;
+                alert( "The value of aNumber after the decrement is now: " + aNumber);
+
+            do {
+                alert( "The value of aNumber in the do while loop is now: " + aNumber);
+                aNumber--;
+                aNumber= aNumber + 2 ;
+            } while (aNumber < bNumber);
+                alert( "You have reached the end of the script.");
+            
+            }      
+
+        </script>    
+    </head>
+
+        <body>
+            <header></header>
+
+            <nav><a href="loops.html">Loops</a><a href="index.html">Home</a></nav>
+
+            <main>
+                                
+                <input type="submit" id="submit" value="Submit" onclick="enter()">
+
+            </main>
+            
+            <footer></footer>
+
+        </body>
+    
+</html>

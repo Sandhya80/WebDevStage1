@@ -1,0 +1,182 @@
+body {
+    background-image: linear-gradient(rgb(173, 132, 173),rgb(156, 111, 111));
+}
+
+
+header img {
+    width:100%; /*This stretches the image across the viewport.*/
+    height:auto; /*The height will change according to the size of the viewport.*/
+    max-width: 100px;
+    }
+
+nav ul {
+    padding: 0;
+    margin-top: 0.2em; 
+    margin-bottom: 0.2em;
+}    
+
+nav ul li {
+    background-color: rgb(67, 4, 70);
+    padding: 1em;
+    min-width: 12%;
+    margin: .25em;
+    list-style-type: none; /*This removes the bullet points from the list.*/
+}
+
+nav {
+    /*background-color: white;
+    border-top: solid 0.3em black; This provides a border at the top of the element.
+    border-bottom: solid 0.3em black; /*This provides a border at the bottom of the element.*/
+    border-radius: 1em; /*This rounds the corners of the elements.*/
+    margin-bottom: 1em; /*This gives some space between elements.*/
+    font-weight: bold;
+    text-align: center;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /*This removes the underline from the hyperlinks on the nav elements*/
+}
+
+figure {
+    text-align:left;
+    background-color: white;
+}
+
+figure img {
+    max-width: 800px;
+    width: 20%;
+    height: auto;
+}
+
+main {
+    background-color: white;
+    border-top: solid 0.3em black; /*This provides a border at the top of the element.*/
+    border-bottom: solid 0.3em black; /*This provides a border at the bottom of the element.*/
+    border-radius: 1em; /*This rounds the corners of the elements.*/
+    margin-bottom: 1em; /*This gives some space between elements.*/
+}
+/* This was for our 3-column layout begin.*/
+
+main .row:after {
+    content:"";
+    display: table;
+    clear: both;  
+}
+
+main div .column {
+    float: left;
+}
+
+main div .left {
+    padding: 0.5%;
+    width: 20%;
+    float: left;
+    
+}
+
+main div .right {    
+    width: 25%;
+    float: right;
+    padding: 0.5%;
+}
+
+/* 3-column layout end*/
+/* .products& prices table begin.*/
+.Products table {
+    border: 0.1em solid black;
+    border-collapse: collapse;
+    width: 98%;
+    margin-left:1%;
+}  
+
+.Products caption {
+    border: 0.1em solid black;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.Products th, td {
+    border: 0.1em solid black;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.Products th {
+    background-color: black;
+    color: white;
+}
+/* .products& prices table ends.*/
+
+
+footer {
+    background-color: white;
+    border-top: solid 0.3em black; /*This provides a border at the top of the element.*/
+    border-bottom: solid 0.3em black; /*This provides a border at the bottom of the element.*/
+    border-radius: 1em; /*This rounds the corners of the elements.*/
+    text-align: center;
+}
+
+/*Begin mobile screen viewport*/
+@media screen and (max-width: 639px) {
+
+        nav ul li {
+        border-radius: 1em;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+    /*End mobile screen viewport*/
+    
+}
+
+/*Begin tablet screen viewport*/
+@media screen and (min-width: 641px) {
+
+    nav ul li {
+        display: inline-block; /*This lists items hoizontally and allows them to stretch.*/
+        border-radius: 1em;
+    }
+    /*End tablet screen viewport*/
+    
+}
+
+/*Begin desktop screen viewport*/
+@media screen and (min-width: 960px) {
+
+
+
+    header img {
+        width: auto;
+        height: 5em;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    nav {
+        margin-top: -5.1em; /*This moves the nav element to the top where it normally should be*/
+        width: 60%;
+        float:right; /*This floats the nav element to the right*/
+    }
+
+    main div .center {
+        padding: 10px;
+        width: 45%;
+        
+        border-left: 0.3em solid black;
+        border-right: 0.3em solid black;
+          
+    }   
+
+    
+    /*End desktop screen viewport*/
+
+}   
